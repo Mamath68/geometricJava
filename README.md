@@ -1,3 +1,3 @@
-# Exercice JAVA
+# Exercices JAVA
 
 ## Géométrie
