@@ -15,10 +15,10 @@ public class Triangle extends Forme {
 
     @Override
     public String toString() {
-        return "\n Triangle { " +
-                "cote 1 = " + cote +
-                ", cote 2 = " + cote +
-                ", cote 3 = " + cote +
-                " }. Le périmètre est = " + this.getPerimetre();
+        return "\n Je suis un Triangle avec des cotes qui sont les suivantes : " +
+                "Cote 1: " + cote +
+                ", Cote 2: " + cote +
+                ", Cote 3: " + cote +
+                ". Le périmètre est " + this.getPerimetre();
     }
 }

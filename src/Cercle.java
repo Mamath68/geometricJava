@@ -17,8 +17,7 @@ public class Cercle extends Forme {
 
     @Override
     public String toString() {
-        return "\n Cercle{" +
-                "Mon rayon est = " + this.rayon +
-                " }. Le périmètre est = " + this.getPerimetre();
+        return "\n Je suis un Cercle avec un rayon de " + this.rayon +
+                ". Le périmètre est " + this.getPerimetre() + "\n";
     }
 }

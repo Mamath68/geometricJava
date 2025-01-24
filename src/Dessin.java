@@ -20,13 +20,12 @@ public class Dessin {
     }
 
     public static void main(String[] args) {
-        Dessin dessin = new Dessin(new Triangle(), new Rectangle(), new Rectangle(), new Cercle(6));
+        Dessin dessin = new Dessin(new Triangle(), new Rectangle(), new Cercle());
         System.out.println(dessin);
     }
 
     @Override
     public String toString() {
-        return "Dessin{" + this.formes +
-                '}';
+        return this.formes.toString();
     }
 }
