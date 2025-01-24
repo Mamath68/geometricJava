@@ -1,19 +1,41 @@
 public class Rectangle extends AGeometricForm {
-    private final int largeur, longueur;
+
+    private final int largeur;
+    private int longueur = 5;
+
+    public Rectangle() {
+        this.largeur = 10;
+    }
 
     public Rectangle(int largeur, int longueur) {
         this.largeur = largeur;
         this.longueur = longueur;
     }
 
-    @Override
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle();
+        Rectangle r2 = new Rectangle(3, 4);
+
+        System.out.println(r);
+        System.out.println(r2);
+    }
+
+
+    public int getLargeur() {
+        return this.largeur;
+    }
+
+    public int getLongueur() {
+        return this.longueur;
+    }
+
     public int getPerimetre() {
-        return 2 * (this.largeur + this.longueur);
+        return (this.getLargeur() + this.getLongueur()) * 2;
     }
 
     @Override
     public String toString() {
-        return "Je suis un rectangle de largeur " + this.largeur + " et de longueur " + this.longueur + ". Mon périmètre est de: " + this.getPerimetre();
+        return "\n Je suis un rectangle avec une longueur de : " + this.longueur + " et une largeur de " + this.largeur + ". Le périmètre est = " + this.getPerimetre();
     }
 
 }

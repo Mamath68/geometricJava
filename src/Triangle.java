@@ -1,19 +1,24 @@
 public class Triangle extends AGeometricForm {
 
-    private final int cote;
+    private int cote = 10;
+
+    public Triangle() {
+    }
 
     public Triangle(int cote) {
         this.cote = cote;
     }
 
-    @Override
     public int getPerimetre() {
-        return (this.cote + this.cote + this.cote);
+        return this.cote * 3;
     }
 
     @Override
     public String toString() {
-        return "Je suis un triangle isocèle: " +
-                "cote 1: " + this.cote + " cote 2: " + this.cote + " cote 3: " + this.cote+ ". Mon périmètre est de: " + this.getPerimetre();
+        return "\n Triangle { " +
+                "cote 1 = " + cote +
+                ", cote 2 = " + cote +
+                ", cote 3 = " + cote +
+                " }. Le périmètre est = " + this.getPerimetre();
     }
 }

@@ -1,20 +1,24 @@
 import static java.lang.Math.PI;
 
 public class Cercle extends AGeometricForm {
-    private final int rayon;
+
+    private int rayon = 10;
+
+    public Cercle() {
+    }
 
     public Cercle(int rayon) {
         this.rayon = rayon;
     }
 
-    @Override
     public int getPerimetre() {
-        return (int) (2 * PI * this.rayon);
+        return (int) (this.rayon * 2 * PI);
     }
 
     @Override
     public String toString() {
-        return "Je suis un cercle de rayon " + this.rayon + ". Mon périmètre est de: " + this.getPerimetre();
+        return "\n Cercle{" +
+                "Mon rayon est = " + this.rayon +
+                " }. Le périmètre est = " + this.getPerimetre();
     }
-
 }
