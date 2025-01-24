@@ -1,5 +1,3 @@
-import static java.lang.Math.PI;
-
 public class Cercle extends Forme {
 
     private int rayon = 10;
@@ -7,17 +5,30 @@ public class Cercle extends Forme {
     public Cercle() {
     }
 
+
     public Cercle(int rayon) {
         this.rayon = rayon;
     }
 
+    public Cercle(int rayon, int x, int y) {
+        super(x, y);
+        this.rayon = rayon;
+    }
+
+
     public int getPerimetre() {
-        return (int) (this.rayon * 2 * PI);
+        return (int) (this.rayon * 2 * Math.PI);
     }
 
     @Override
     public String toString() {
-        return "\n Je suis un Cercle avec un rayon de " + this.rayon +
-                ". Le périmètre est " + this.getPerimetre() + "\n";
+        return "Cercle{" +
+                "rayon=" + rayon +
+                super.toString() +
+                '}';
+    }
+
+    public String toHTMLCanvas() {
+        return "ctx.fillRect(" + this.getX() + "," + this.getY() + "," + this.rayon + ");";
     }
 }
