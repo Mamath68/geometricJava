@@ -1,4 +1,4 @@
-public class Rectangle extends AGeometricForm {
+public class Rectangle extends Forme {
 
     private final int largeur;
     private int longueur = 5;

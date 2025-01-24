@@ -4,18 +4,18 @@ import java.util.List;
 
 public class Dessin {
 
-    private List<AGeometricForm> formes = new ArrayList<>();
+    private List<Forme> formes = new ArrayList<>();
 
 
     public Dessin() {
         formes.add(new Cercle(5));
     }
 
-    public Dessin(AGeometricForm... formes) {
+    public Dessin(Forme... formes) {
         this.formes.addAll(Arrays.asList(formes));
     }
 
-    public Dessin(List<AGeometricForm> formes) {
+    public Dessin(List<Forme> formes) {
         this.formes = formes;
     }
 

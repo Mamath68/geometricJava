@@ -1,6 +1,6 @@
 import static java.lang.Math.PI;
 
-public class Cercle extends AGeometricForm {
+public class Cercle extends Forme {
 
     private int rayon = 10;
 

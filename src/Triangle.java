@@ -1,4 +1,4 @@
-public class Triangle extends AGeometricForm {
+public class Triangle extends Forme {
 
     private int cote = 10;
 
